@@ -1,0 +1,1357 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+html {
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #111; /* Dark background for contrast */
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+
+header .logo img {
+    max-width: 150px;
+    height: 50px
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+        margin: 0 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12; /* Highlight color for hover */
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        background-color: #111;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        display: none;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        text-align: center;
+        padding: 10px;
+        display: block;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+}
+
+/* Search Bar */
+.search-form input[type="search"] {
+    padding: 10px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #e0e0e0;
+    margin: 10px 0;
+}
+
+/* Icons */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons div {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #ff9900;
+    cursor: pointer;
+}
+
+/* Heading Section */
+.heading {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(180deg, #1f1f1f, #121212);
+    color: #fff;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #543310;
+}
+
+.heading p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ff9900;
+}
+
+/* Cart section*/
+.icons {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icons a:hover {
+    color: #f39c12;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.about img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Instruments Section */
+.instruments {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 50px; 
+    background-color: #1a1a1a;
+}
+
+.instru-img{
+    
+    background-size: cover;
+    transition: all 1.1s;
+}
+
+.card:hover .instru-img{
+    transform: scale(1.2);
+}
+
+
+.instruments h1 {
+    font-size: 2rem;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+.instru-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-content {
+    padding-top: 60px;
+}
+
+.card {
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #ff9900;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+.card .button {
+    background-color: #ff9900;
+    color: #121212;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card .button:hover {
+    background-color: #e68a00;
+}
+
+.view-more {
+    margin-top: 20px;
+}
+
+.view-more a {
+    color: #ff9900;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.view-more a:hover {
+    text-decoration: underline;
+}
+
+/* Center the team section heading */
+.team-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Team cards container */
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual card styling */
+.card {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card image */
+.card-img img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/* Card information */
+.team-info h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.team-info p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .team-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+}
+
+.team-container {
+    text-align: center;           /* Centers the text horizontally */
+    margin-bottom: 30px;          /* Optional: Adds some space below the heading */
+}
+
+/* Styling for the team info text */
+.team-info h2, .team-info p {
+    margin: 10px 0;
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product, .cart {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+.footer {
+    background: linear-gradient(135deg, #222, #1a1a1a);
+    color: #e0e0e0;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-box h3 {
+    font-size: 1.4rem;
+    color: #ff9900;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-box p {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+.footer-box a.footer-link {
+    color: #ff9900;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-box a.footer-link:hover {
+    color: #ffffff;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    flex: 1;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background: #ff9900;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #e08800;
+}
+
+/* Social Icons */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-icons .icon-link {
+    color: #ff9900;
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-icons .icon-link:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Navbar - Horizontal Alignment */
+.navbar ul {
+    display: flex;
+    justify-content: center; /* Center the menu */
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px; /* Add spacing between menu items */
+}
+
+.navbar ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #ff9900; /* Highlight active and hover links */
+}
+
+/* About Us Section - Horizontal Layout */
+.about {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    justify-content: space-evenly; /* Add spacing between sections */
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+.about-image img {
+    width: 200px; /* Resize images */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-content {
+    max-width: 500px;
+    text-align: left; /* Align text to the left */
+}
+
+.about-content h2 {
+    font-size: 1.8rem;
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Team Section - Horizontal Layout */
+.team-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    text-align: center;
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ff9900; /* Add a nice border */
+}
+
+.card-name {
+    font-size: 1.2rem;
+    color: #ff9900;
+    margin-top: 10px;
+}
+
+.card-role,
+.card-email {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Instruments Section - Horizontal Layout */
+.instrument-row {
+    display: flex;
+    justify-content: space-evenly; /* Space items evenly */
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.instrument-card {
+    background: #222;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.instrument-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ff9900; /* Decorative border */
+}
+
+.instrument-card h2 {
+    font-size: 1.2rem;
+    color: #ff9900;
+    margin: 10px 0;
+}
+
+.instrument-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.instrument-card .button {
+    margin-top: 10px;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+html {
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(bg.jpg);
+    color: #e0e0e0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/* Header */
+.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #493628; /* Dark background for contrast */
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        
+    }
+
+header .logo img {
+    max-width: 150px;
+    height: 50px
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+        margin: 0 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #4e412c; /* Highlight color for hover */
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        background-color: #111;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        display: none;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        text-align: center;
+        padding: 10px;
+        display: block;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+}
+
+/* Search Bar */
+.search-form input[type="search"] {
+    padding: 10px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #e0e0e0;
+    margin: 10px 0;
+}
+
+/* Icons */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons div {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #ff9900;
+    cursor: pointer;
+}
+
+/* Heading Section */
+.heading {
+    width: auto;
+    height: 150px;
+    color: #FFE0B5;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(i.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 25s infinite ease-in-out;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(i.jpg);
+    }
+    20%
+    {
+        background-image: url(iced\ coffee.jpg);
+    }
+    40%
+    {
+        background-image: url(e.jpg);
+    }
+    60%
+    {
+        background-image: url(c.jpg);
+    } 
+    80%
+    {
+        background-image: url(Cafe\ aesthetic.jpg);
+    } 
+    100%
+    {
+        background-image: url(Hot\ coffee\ in\ the\ winter\ 🤍\ @lifewjuliaf.jpg);
+    } 
+    120%
+    {
+        background-image: url(o.jpg);
+    } 
+    140%
+    {
+        background-image: url(Coffee\ _\ Cafe\ _\ Coffee\ Shop\ _\ Coffee\ Date\ _.jpg);
+    }
+}
+
+
+
+
+.heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.heading h3 {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #FDF0D1;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #74512D;
+    
+}
+
+.heading p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #FED8B1;
+    
+}
+
+/* Cart section*/
+.icons {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icons a:hover {
+    color: #f39c12;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.about img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Instruments Section bg*/
+.instruments {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 50px; 
+    background-color: #603F26;
+    border-radius: 20px;
+}
+
+.instruments h1 {
+    font-size: 2rem;
+    color: #C8AE7D;
+    margin-bottom: 20px;
+}
+
+.instru-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-content {
+    padding-top: 60px;
+}
+
+.card {
+    background: #3B3030;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 320px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #CEE6F3;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+.card .button {
+    background-color: #3F4E4F;
+    color: #FFDBB5;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card .button:hover {
+    background-color: #607274;
+}
+
+.view-more {
+    margin-top: 20px;
+}
+
+.view-more a {
+    background-color: #3d4a4b;
+    color: #FFDBB5;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-more a:hover {
+    background-color: #171f20;
+}
+
+/* Center the team section heading */
+.team-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Team cards container */
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual card styling */
+.card {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card image */
+.card-img img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/* Card information */
+.team-info h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.team-info p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.button {
+    background-color: #3F4E4F;
+    color: #FFDBB5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #607274;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .team-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+}
+
+.team-container {
+    text-align: center;           /* Centers the text horizontally */
+    margin-bottom: 30px;          /* Optional: Adds some space below the heading */
+}
+
+/* Styling for the team info text */
+.team-info h2, .team-info p {
+    margin: 10px 0;
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product, .cart {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+.footer {
+    background: #3B3030;
+    color: #e0e0e0;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-box h3 {
+    font-size: 1.4rem;
+    color: #FFDBB5;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-box p {
+    font-size: 1rem;
+    color: #ECB176;
+    margin: 5px 0;
+}
+
+.footer-box a.footer-link {
+    color: #ECB176;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-box a.footer-link:hover {
+    color: #ffffff;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    flex: 1;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background: #607274;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #4A4947;
+}
+
+/* Social Icons */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-icons .icon-link {
+    color: #ff9900;
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-icons .icon-link:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #c05757;
+    color: #FFDBB5;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Navbar - Horizontal Alignment */
+.navbar a{
+    
+    text-decoration: none;
+    color: #FFE0B5;
+    text-transform: none;
+    transition: 0.25s ease;
+
+}
+
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.navbar ul li{
+    text-decoration: none;
+    margin: 0 0.75em 0 0.75em;
+
+}
+
+.navbar ul:hover a{
+    color: #776B5D;
+
+}
+
+.navbar ul:hover a:hover{
+    color: #FAEED1;
+    box-shadow: 0 2px 0 0 currentColor;
+}
+
+
+/* About Us Section - Horizontal Layout */
+.about {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    justify-content: space-evenly; /* Add spacing between sections */
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+.about-image img {
+    width: 200px; /* Resize images */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-content {
+    max-width: 500px;
+    text-align: left; /* Align text to the left */
+    background: #6C4E31;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 15px;
+}
+
+.about-content h2 {
+    font-size: 1.8rem;
+    color: #F3EEEA;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #F4EAE0;
+}
+
+/* Team Section - Horizontal Layout */
+.team-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    text-align: center;
+    background: #3B3030;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ff9900; /* Add a nice border */
+}
+
+.card-name {
+    font-size: 1.2rem;
+    color: #ff9900;
+    margin-top: 10px;
+}
+
+.card-role,
+.card-email {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Instruments Section - Horizontal Layout */
+.instrument-row {
+    display: flex;
+    justify-content: space-evenly; /* Space items evenly */
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.instrument-card {
+    background: #3B3030;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.instrument-card img {
+    width: 250px;
+    height: 350px;
+    border-bottom: 2px solid #CC9544; /* Decorative border */
+}
+
+.instrument-card h2 {
+    font-size: 1.2rem;
+    color: #B7CADB;
+    margin: 10px 0;
+}
+
+.instrument-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.instrument-card .button {
+    margin-top: 10px;
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Guitar Store</title>
+    <link rel="icon" type="image/x-icon" href="CU_LOGO.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+
+    <header class="header">
+        <a href="Home.html" class="logo">
+            <img src="CU_LOGO.png" alt="CU Logo">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="About_us.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="cart.html">
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Heading -->
+     <div class="main-content">
+    <div class="main-content">
+    <div class="heading">
+        <h1>Menu</h1>
+        <p>Choose your perfect Coffee & Bread!</p>
+    </div>
+
+    <section class="instruments">
+        <h1>Bread & Dessert</h1>
+        <div class="instrument-row">
+            <!-- Item 1 -->
+            <div class="instrument-card ">
+                <img src="How to make Croissants.jpg" alt="Butter Croissant">
+                <h2>Butter Croissant</h2>
+                <p> Croissant is typically made of yeast-risen dough. 
+                    The dough is first layered with butter and then rolled. 
+                    It is folded many times in a process called lamination. 
+                    Then the dough is cut into triangles, rolled to form a crescent shape and baked.
+                </p>
+                <br>
+                <h5>Price: ₱65</h5>
+                <button class="button" onclick="addToCart('Jazzmaster')">Add to Cart</button>
+            </div>
+            <!-- Item 2 -->
+             
+            <div class="instrument-card">
+                <img src="Cupcakes with sprinkles.jpg" alt="Cupcakes">
+                <h2>Cupcakes</h2>
+                <p> Cupcakes are small, tasty snack cakes that are favored for their portability and portion-control. 
+                    They are batter cakes baked in a cup-shaped foil or temperature resistant paper.
+                </p>
+                <br>
+                <br>
+                <br>
+                <h5>Price: ₱65= 2 Variation Cupcakes</h5>
+                <button class="button" onclick="addToCart('Precision Bass')">Add to Cart</button>
+            </div>
+            <!-- Item 3 -->
+            <div class="instrument-card">
+                <img src="Mini Strawberry Cheesecakes.jpg" alt="Cheesecake">
+                <h2>Mini Strawberry Cheesecake</h2>
+                <p> Mini strawberry cheesecake is a small cheesecake made with a graham cracker crust, 
+                    creamy cheesecake filling, and fresh strawberries.
+                </p>
+                <br>
+                <br>
+                <br>
+                <h5>Price: ₱75</h5>
+                <button class="button" onclick="addToCart('SG')">Add to Cart</button>
+            </div>
+        </div>
+        <br>
+    
+        <!-- Second Row of Instruments -->
+        <h1>Hot / Iced Coffee</h1>
+        <div class="instrument-row">
+            <!-- Item 4 -->
+            <div class="instrument-card">
+                <img src="Homemade Cold Brew Coffee - Danilicious (1).jpg" alt="Americano">
+                <h2>Americano</h2>
+                <p> An Americano is made by pouring hot water or water with ice over one or two espresso shots, 
+                    resulting in a drink of similar volume and strength to regular coffee. 
+                    
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h5>HOT:₱50 ICED:₱65</h5>
+                <button class="button" onclick="addToCart('Martin D-28')">Add to Cart</button>
+            </div>
+            <!-- Item 5 -->
+            <div class="instrument-card">
+                <img src="Icedlatte.jpg" alt="Icedlatte">
+                <h2>Iced Latte</h2>
+                <p> An iced latte is a variation on the traditional latte—but served cold. 
+                    This refreshing coffee drink is made with espresso, milk and ice. 
+                    Brewed espresso is combined with cold milk and ice, creating a smooth, 
+                    creamy coffee drink. You can also order a Latte(Hot).
+                </p>
+                <br>
+                
+                <h5>HOT:₱70 ICED:₱85</h5>
+                <button class="button" onclick="addToCart('Taylor 314ce')">Add to Cart</button>
+            </div>
+            <!-- Item 6 -->
+            <div class="instrument-card">
+                <img src="Easy Iced Spanish Latte.jpg" alt="Kape de Kastila">
+                <h2>Kape de Kastila</h2>
+                <p> Kape de Kastila or also know as Spanish latte. A Kape de Kastila 
+                    is a coffee drink made with espresso, 
+                    condensed milk, and milk, and sometimes ice. 
+                    It's known for its balance of sweet and intense 
+                    flavors, and its creamy texture. 
+                </p>
+                <br>
+                <br>
+                <h5>HOT:₱75 ICED:₱90</h5>
+                <button class="button" onclick="addToCart('Fender Champion 50XL')">Add to Cart</button>
+            </div>
+        </div>
+
+
+    <!-- Third Row of Instruments -->
+        <div class="instrument-row">
+            <!-- Item 7 -->
+            <div class="instrument-card">
+                <img src="Mozart Coconut Iced Latte.jpg" alt="Iced Coconut Latte">
+                <h2>Iced Coconut Latte</h2>
+                <p>Coconutmilk and espresso are paired over a bed of ice in this cold, 
+                    classic coffee drink that's sweet, refreshing and delicious. 
+                    Enjoy this delectable dairy-free latte anytime you're in the mood 
+                    for a fruit-flavored pick-me-up.
+                </p>
+                <br>
+                <br>
+                <h5>ICED:₱85</h5>
+                <button class="button" onclick="addToCart('Martin D-28')">Add to Cart</button>
+            </div>
+            <!-- Item 8 -->
+            <div class="instrument-card">
+                <img src="Matcha Espresso Fusion.jpg" alt="Dirty Matcha">
+                <h2>Dirty Matcha Espresso</h2>
+                <p>Dirty Matcha Latte where matcha and coffee become best friends! 
+                    This recipe combines the best of both worlds, 
+                    creating a delicious clash of flavors.
+                </p>
+                <br>
+                <br>
+                <br>
+                <h5>HOT:₱80 ICED:₱95</h5>
+                <button class="button" onclick="addToCart('Taylor 314ce')">Add to Cart</button>
+            </div>
+            <!-- Item 9 -->
+            <div class="instrument-card">
+                <img src="Incredibly Easy Ca Phe Sua Da (Vietnamese Coffee).jpg" alt="Iced Kape Sua Da (Vietnamesse Latte)">
+                <h2>Iced Kape Sua Da (Vietnamesse Latte)</h2>
+                <p>Iced kape sua da, also known as cà phê sữa đá, is a 
+                    Vietnamese iced coffee drink made with coffee, sweetened condensed milk, and ice. 
+                    The coffee is usually brewed using a drip filter and Robusta beans. 
+                </p>
+                <br>
+                <h5>HOT:₱75 ICED:₱90</h5>
+                <button class="button" onclick="addToCart('Fender Champion 50XL')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+
+</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Location Section -->
+            <div class="footer-box">
+                <h3>Location</h3>
+                <p><a href="https://maps.app.goo.gl/AHN3HbAwvHmGqNLZ9" class="footer-link" target="_blank" rel="noopener noreferrer">
+                    College of Industrial Education, 660, TUP Ermita, Manila, 1000
+                </a></p>
+            </div>
+    
+            <!-- Newsletter Section -->
+            <div class="footer-box">
+                <h3>Newsletter</h3>
+                <p>Stay updated and hydrated</p>
+                <form class="newsletter-form">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+    
+            <!-- Contact Section -->
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p>Follow us on:</p>
+                <div class="footer-icons">
+                    <a href="#" class="icon-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="icon-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="icon-link"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Guitar Store | All Rights Reserved</p>
+        </div>
+    </footer>
+    
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
